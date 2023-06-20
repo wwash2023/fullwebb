@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Document</title>
+  <style>
+    /* CSS styling for the navbar and login modal */
+    .navbar {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .navbar-icon {
+      margin-right: 10px;
+      color: #fff;
+    }
+
+    #loginModal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      width: 300px;
+    }
+    body{
+        
+        background-color: blue;
+        background-image: url('laptop.jpeg');
+        background-size: cover ;
+        background-repeat: no-repeat;
+    
+        background-position-y: bottom 50%;
+       
+
+    }
+    .container div{
+        border-style: outset;
+    }
+   
+    
+  </style>
+</head>
+<body>
+    <div class="container"></div>
+   
+  <nav class="navbar">
+    <a class="navbar-brand"> Brand Logo</a>
+    <a class="navbar-icon active" href="Home.html"><i class="fas fa-home"></i>Home</a>
+    <a class="navbar-icon" href="Aboutus.html"><i class="fas fa-solid fa-list fa-beat-fade"></i>About Us</a>
+    <a class="navbar-icon active" href="productpage.html"><i class="fas fa-info"></i>Products</a>
+    <a class="navbar-icon" href="Contactus.html"><i class="fas fa-user"></i>Contact Us</a>
+    <a class="navbar-icon" id="loginLink"><i class="fas fa-user"></i>Log In</a>
+  </nav>
+
+  <div id="loginModal">
+    <div class="modal-content">
+      <h2>Login </h2>
+      <!-- Add your login form code or content here -->
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript to show/hide the login modal
+    $(document).ready(function() {
+      $('.navbar-icon').click(function() {
+        $('#loginModal').show();
+      });
+
+      $('.modal-content').click(function(event) {
+        event.stopPropagation();
+      });
+
+      $(document).click(function() {
+        $('#loginModal').hide();
+      });
+      
+    });
+  </script>
+</body>
+</html>

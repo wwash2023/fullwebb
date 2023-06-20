@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Document</title>
+  <style>
+    /* CSS styling for the navbar and login modal */
+    .navbar {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .navbar-icon {
+      margin-right: 10px;
+      color: #fff;
+    }
+
+   
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      width: 300px;
+    }
+    body{
+        
+        background-color: blue;     
+
+    }
+    h1{
+      text-align: center;
+    }
+    .form-control-lg {
+    padding: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+  }
+  
+ 
+  </style>
+</head>
+<body>
+   
+  <nav class="navbar">
+    <a class="navbar-brand"> Brand Logo</a>
+    <a class="navbar-icon" href="Home.html"><i class="fas fa-home"></i>Home</a>
+    <a class="navbar-icon active" href="Aboutus.html"><i class="fas fa-list"></i>About Us</a>
+    <a class="navbar-icon " href="productpage.html"><i class="fas fa-info"></i>Products</a>
+    <a class="navbar-icon" href="Contactus.html"><i class="fas fa-user"></i>Contact Us</a>
+   
+  </nav>
+  <h1>Contact Us</h1>
+<div class="container">
+  <form id="myForm">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="text" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Message</label>
+      <textarea class="form-control form-control-lg" id="exampleInputPassword1"></textarea>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Perform form validation and data handling
+    // Add your custom logic here
+
+    // Redirect to a specific URL
+    window.location.href = "http://127.0.0.1:5500/Home.html"; // Replace with your desired URL
+  });
+
+  </script>
+  
+</body>
+</html>
